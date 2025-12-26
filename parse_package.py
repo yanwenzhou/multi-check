@@ -254,10 +254,33 @@ class PackageParser:
             formula_elem = elem.find("./ns:FORMULA", namespaces=ns)
             if formula_elem is not None:
                 step.formula = self.ve.parse_value_expression(formula_elem.find("./ns:VALUE", namespaces=ns))
-            
+
             expect_elem = elem.find("./ns:EXPECTATION-OPTION", namespaces=ns)
             if expect_elem is not None:
-                step.expectation = self.ve.parse_expression(expect_elem.find("./ns:EXPRESSION", namespaces=ns))
+                expr_elem = expect_elem.find("./ns:EXPRESSION", namespaces=ns)
+                if expr_elem is not None:
+                    # 解析完整的表达式结构
+                    expr_type = expr_elem.get("{http://www.w3.org/2001/XMLSchema-instance}type")
+                    if expr_type == "builtNumericExpression":
+                        rel_elem = expr_elem.find("./ns:RELATION", namespaces=ns)
+                        val_elem = expr_elem.find("./ns:VALUE", namespaces=ns)
+
+                        expectation = {
+                            "type": expr_type,
+                            "relation": rel_elem.text if rel_elem is not None else None
+                        }
+
+                        if val_elem is not None:
+                            # 深入解析 VALUE 元素
+                            val_type = val_elem.get("{http://www.w3.org/2001/XMLSchema-instance}type")
+                            if val_type == "valueBaseExpression":
+                                inner_val = val_elem.find("./ns:VALUE", namespaces=ns)
+                                if inner_val is not None:
+                                    expectation["value"] = self.ve.parse_value_expression(inner_val)
+                            else:
+                                expectation["value"] = self.ve.parse_value_expression(val_elem)
+
+                        step.expectation = expectation
         
         # TsMultiCheck
         elif xsi_type == "utility-2fb63e30-6816-11e5-bfd3-4851b798ee63":

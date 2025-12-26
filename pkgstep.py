@@ -437,14 +437,20 @@ class PkgStep():
         # mutlcheck.parent_id = ts.parent_id
         # mutlcheck.id = teststep_elem.get('id')
 
-        # if teststep_elem.find("./ns:BREAKPOINT", namespaces=ns) is not None:
-        #     mutlcheck.breakpoint = self.ve.value(teststep_elem.find("./ns:BREAKPOINT", namespaces=ns))
+        # 解析断点和启用状态
+        if teststep_elem.find("./ns:BREAKPOINT", namespaces=ns) is not None:
+            ts.breakpoint = self.ve.value(teststep_elem.find("./ns:BREAKPOINT", namespaces=ns))
 
-        # if teststep_elem.find("./ns:ENABLED", namespaces=ns) is not None:
-        #     mutlcheck.enable = self.ve.value(teststep_elem.find("./ns:ENABLED", namespaces=ns))
+        if teststep_elem.find("./ns:ENABLED", namespaces=ns) is not None:
+            ts.enable = self.ve.value(teststep_elem.find("./ns:ENABLED", namespaces=ns))
 
+        # 解析 MATCHALL
         if teststep_elem.find("./ns:MATCHALL", namespaces=ns) is not None:
             ts.matchall = self.ve.value(teststep_elem.find("./ns:MATCHALL", namespaces=ns))
+
+        # 解析 TIME-OPTION
+        if teststep_elem.find("./ns:TIME-OPTION", namespaces=ns) is not None:
+            ts.time_option = self.Eva.time_option(teststep_elem.find("./ns:TIME-OPTION", namespaces=ns))
 
         return ts
 
