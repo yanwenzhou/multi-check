@@ -1,0 +1,204 @@
+[
+    {
+        "id": "5cb7071b-4004-40a6-951c-bd9ca271ee1b",
+        "parent_id": null,
+        "name": "TsCalculation",
+        "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+        "breakpoint": false,
+        "enable": true,
+        "formula": 0,
+        "expectation": {
+            "type": "builtNumericExpression",
+            "relation": "==",
+            "value": {
+                "type": "valueBaseExpression",
+                "value": "\n\t\t\t\t\t\t"
+            }
+        }
+    },
+    {
+        "id": "c8cf80e5-242b-4ced-856b-c3f1d81e7a35",
+        "parent_id": null,
+        "name": "TsCalculation",
+        "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+        "breakpoint": false,
+        "enable": true,
+        "formula": 0,
+        "expectation": {
+            "type": "builtNumericExpression",
+            "relation": "==",
+            "value": {
+                "type": "valueBaseExpression",
+                "value": "\n\t\t\t\t\t\t"
+            }
+        }
+    },
+    {
+        "id": "14f184e8-945d-4944-ad84-2fe0f3f6cad9",
+        "parent_id": null,
+        "name": "TsBlock",
+        "type": "utility-2752ad1e-4fef-11dc-81d4-0013728784ee",
+        "breakpoint": false,
+        "enable": false,
+        "action": {
+            "en_US": "New block",
+            "initial_language": "en_US"
+        }
+    },
+    {
+        "id": "0d98033b-2205-47fd-bc49-592b36d5a9be",
+        "parent_id": null,
+        "name": "TsMultiCheck",
+        "type": "utility-2fb63e30-6816-11e5-bfd3-4851b798ee63",
+        "breakpoint": false,
+        "enable": true,
+        "matchall": true,
+        "time_option": {
+            "type": "timelessOption",
+            "expression": {
+                "type": "manualExpression",
+                "variable": "value"
+            }
+        },
+        "children": [
+            {
+                "id": "e5314a85-7798-4091-83e6-aa1bfccc5263",
+                "parent_id": "0d98033b-2205-47fd-bc49-592b36d5a9be",
+                "name": "TsCalculation",
+                "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+                "breakpoint": false,
+                "enable": true,
+                "formula": 0,
+                "expectation": {
+                    "type": "builtNumericExpression",
+                    "relation": "==",
+                    "value": {
+                        "type": "valueBaseExpression",
+                        "value": "\n\t\t\t\t\t\t\t"
+                    }
+                }
+            },
+            {
+                "id": "ad6aeddc-d65e-4da7-b5a8-1f82de5ac144",
+                "parent_id": "0d98033b-2205-47fd-bc49-592b36d5a9be",
+                "name": "TsCalculation",
+                "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+                "breakpoint": false,
+                "enable": true,
+                "formula": 0,
+                "expectation": {
+                    "type": "builtNumericExpression",
+                    "relation": "==",
+                    "value": {
+                        "type": "valueBaseExpression",
+                        "value": "\n\t\t\t\t\t\t\t"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "1bcd18e6-f1c5-4d0c-a12e-74f13ef7be16",
+        "parent_id": null,
+        "name": "TsMultiCheck",
+        "type": "utility-2fb63e30-6816-11e5-bfd3-4851b798ee63",
+        "breakpoint": false,
+        "enable": true,
+        "matchall": true,
+        "time_option": {
+            "type": "timelessOption",
+            "expression": {
+                "type": "manualExpression",
+                "variable": "value"
+            }
+        },
+        "children": [
+            {
+                "id": "7fc1c18b-1d5f-470b-87e4-ab7510447060",
+                "parent_id": "1bcd18e6-f1c5-4d0c-a12e-74f13ef7be16",
+                "name": "TsCalculation",
+                "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+                "breakpoint": false,
+                "enable": true,
+                "formula": 0,
+                "expectation": {
+                    "type": "builtNumericExpression",
+                    "relation": "==",
+                    "value": {
+                        "type": "valueBaseExpression",
+                        "value": "\n\t\t\t\t\t\t\t"
+                    }
+                }
+            },
+            {
+                "id": "40fa526d-1fdf-4524-bb75-a4dbdcdcf9a6",
+                "parent_id": "1bcd18e6-f1c5-4d0c-a12e-74f13ef7be16",
+                "name": "TsCalculation",
+                "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+                "breakpoint": false,
+                "enable": true,
+                "formula": 0,
+                "expectation": {
+                    "type": "builtNumericExpression",
+                    "relation": "==",
+                    "value": {
+                        "type": "valueBaseExpression",
+                        "value": "\n\t\t\t\t\t\t\t"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "4eb20299-5aef-48d5-a7b9-3b34f2add562",
+        "parent_id": null,
+        "name": "TsMultiCheck",
+        "type": "utility-2fb63e30-6816-11e5-bfd3-4851b798ee63",
+        "breakpoint": false,
+        "enable": true,
+        "matchall": false,
+        "time_option": {
+            "type": "timelessOption",
+            "expression": {
+                "type": "manualExpression",
+                "variable": "value"
+            }
+        },
+        "children": [
+            {
+                "id": "396f957a-8426-4aaa-883e-2be01d71388d",
+                "parent_id": "4eb20299-5aef-48d5-a7b9-3b34f2add562",
+                "name": "TsCalculation",
+                "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+                "breakpoint": false,
+                "enable": true,
+                "formula": 0,
+                "expectation": {
+                    "type": "builtNumericExpression",
+                    "relation": "==",
+                    "value": {
+                        "type": "valueBaseExpression",
+                        "value": "\n\t\t\t\t\t\t\t"
+                    }
+                }
+            },
+            {
+                "id": "062728d8-7432-4344-8ac4-af9007c6fb40",
+                "parent_id": "4eb20299-5aef-48d5-a7b9-3b34f2add562",
+                "name": "TsCalculation",
+                "type": "utility-4115fa00-5f3c-11df-8a53-001c233b3528",
+                "breakpoint": false,
+                "enable": true,
+                "formula": 0,
+                "expectation": {
+                    "type": "builtNumericExpression",
+                    "relation": "==",
+                    "value": {
+                        "type": "valueBaseExpression",
+                        "value": "\n\t\t\t\t\t\t\t"
+                    }
+                }
+            }
+        ]
+    }
+]

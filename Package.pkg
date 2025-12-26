@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.3.4.141503+2a4a6aac5799" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">jobResult</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="5cb7071b-4004-40a6-951c-bd9ca271ee1b" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">0</VALUE>
+			</FORMULA>
+			<EXPECTATION-OPTION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="builtNumericExpression">
+					<RELATION xsi:type="string">==</RELATION>
+					<VALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">0</VALUE>
+					</VALUE>
+				</EXPRESSION>
+			</EXPECTATION-OPTION>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="c8cf80e5-242b-4ced-856b-c3f1d81e7a35" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">0</VALUE>
+			</FORMULA>
+			<EXPECTATION-OPTION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="builtNumericExpression">
+					<RELATION xsi:type="string">==</RELATION>
+					<VALUE format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1</VALUE>
+					</VALUE>
+				</EXPRESSION>
+			</EXPECTATION-OPTION>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="14f184e8-945d-4944-ad84-2fe0f3f6cad9" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">New block</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<ENABLED xsi:type="boolean">False</ENABLED>
+		</TESTSTEP>
+		<TESTSTEP id="0d98033b-2205-47fd-bc49-592b36d5a9be" name="TsMultiCheck" xsi:type="utility-2fb63e30-6816-11e5-bfd3-4851b798ee63">
+			<TESTSTEP format-rev="3" id="e5314a85-7798-4091-83e6-aa1bfccc5263" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</FORMULA>
+				<EXPECTATION-OPTION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</VALUE>
+					</EXPRESSION>
+				</EXPECTATION-OPTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="ad6aeddc-d65e-4da7-b5a8-1f82de5ac144" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</FORMULA>
+				<EXPECTATION-OPTION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</VALUE>
+					</EXPRESSION>
+				</EXPECTATION-OPTION>
+			</TESTSTEP>
+			<MATCHALL xsi:type="boolean">True</MATCHALL>
+			<TIME-OPTION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="manualExpression">
+					<BASE-EXPRESSION xsi:type="varBaseExpression">
+						<NAME xsi:type="string">value</NAME>
+					</BASE-EXPRESSION>
+				</EXPRESSION>
+			</TIME-OPTION>
+		</TESTSTEP>
+		<TESTSTEP id="1bcd18e6-f1c5-4d0c-a12e-74f13ef7be16" name="TsMultiCheck" xsi:type="utility-2fb63e30-6816-11e5-bfd3-4851b798ee63">
+			<TESTSTEP format-rev="3" id="7fc1c18b-1d5f-470b-87e4-ab7510447060" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</FORMULA>
+				<EXPECTATION-OPTION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</VALUE>
+					</EXPRESSION>
+				</EXPECTATION-OPTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="40fa526d-1fdf-4524-bb75-a4dbdcdcf9a6" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</FORMULA>
+				<EXPECTATION-OPTION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</VALUE>
+					</EXPRESSION>
+				</EXPECTATION-OPTION>
+			</TESTSTEP>
+			<MATCHALL xsi:type="boolean">True</MATCHALL>
+			<TIME-OPTION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="manualExpression">
+					<BASE-EXPRESSION xsi:type="varBaseExpression">
+						<NAME xsi:type="string">value</NAME>
+					</BASE-EXPRESSION>
+				</EXPRESSION>
+			</TIME-OPTION>
+		</TESTSTEP>
+		<TESTSTEP id="4eb20299-5aef-48d5-a7b9-3b34f2add562" name="TsMultiCheck" xsi:type="utility-2fb63e30-6816-11e5-bfd3-4851b798ee63">
+			<TESTSTEP format-rev="3" id="396f957a-8426-4aaa-883e-2be01d71388d" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</FORMULA>
+				<EXPECTATION-OPTION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</VALUE>
+					</EXPRESSION>
+				</EXPECTATION-OPTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="062728d8-7432-4344-8ac4-af9007c6fb40" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<FORMULA format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</FORMULA>
+				<EXPECTATION-OPTION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</VALUE>
+					</EXPRESSION>
+				</EXPECTATION-OPTION>
+			</TESTSTEP>
+			<MATCHALL xsi:type="boolean">False</MATCHALL>
+			<TIME-OPTION xsi:type="timelessOption">
+				<EXPRESSION xsi:type="manualExpression">
+					<BASE-EXPRESSION xsi:type="varBaseExpression">
+						<NAME xsi:type="string">value</NAME>
+					</BASE-EXPRESSION>
+				</EXPRESSION>
+			</TIME-OPTION>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>
